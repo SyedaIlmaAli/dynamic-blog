@@ -12,7 +12,7 @@ const Feature = () => {
 
         {/* Description paragraph */}
         <p className="text-center mt-4 text-sm sm:text-base text-white opacity-80 mx-4 md:mb-12 lg:mb-16 animate-fade-in-up delay-100">
-          Hi, I'm Ilma, a passionate web developer and tech enthusiast, exploring the latest in web development, design, and technology trends. 
+          Hi, I&apos;m Ilma, a passionate web developer and tech enthusiast, exploring the latest in web development, design, and technology trends. 
           With experience in building dynamic projects using tools like Next.js, TypeScript, and Tailwind CSS, I love sharing insights, tips, and tutorials to help others on their development journey. Join me as I document my learning, projects, and everything tech!
         </p>
 
@@ -48,7 +48,7 @@ const Feature = () => {
 
         {/* Description paragraph below categories */}
         <p className="text-sm md:text-base text-white opacity-75 mb-6 px-4 animate-fade-in-down delay-100 mt-10">
-          In this blog, you'll find a variety of categories covering different aspects of the tech world. From web development, where I dive into the latest frameworks like Next.js and TypeScript, to UI/UX design, where I share tips for creating beautiful, user-friendly interfaces. I also cover the latest tech trends to keep you updated with innovations, as well as provide hands-on tutorials to help you build your skills. Additionally, I showcase my personal and collaborative projects, sharing the lessons and insights gained throughout the process. Whether you're a beginner or an experienced developer, there's something here for everyone to help you grow in your tech journey.
+          In this blog, you&apos;ll find a variety of categories covering different aspects of the tech world. From web development, where I dive into the latest frameworks like Next.js and TypeScript, to UI/UX design, where I share tips for creating beautiful, user-friendly interfaces. I also cover the latest tech trends to keep you updated with innovations, as well as provide hands-on tutorials to help you build your skills. Additionally, I showcase my personal and collaborative projects, sharing the lessons and insights gained throughout the process. Whether you&apos;re a beginner or an experienced developer, there&apos;s something here for everyone to help you grow in your tech journey.
         </p>
       </section>
     </div>

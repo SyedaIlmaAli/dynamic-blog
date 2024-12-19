@@ -27,9 +27,9 @@ const AuthorCard = () => {
 
       {/* Introductory Text */}
       <p className="mt-6 text-gray-700 leading-relaxed text-justify text-lg">
-        Hey there! I'm Ilma, a passionate web developer who loves creating beautiful and functional web experiences. 
+        Hey there! I&apos;m Ilma, a passionate web developer who loves creating beautiful and functional web experiences. 
         On this blog, I share my journey, tips, and ideas about technology, design, and creativity. 
-        Thanks for stopping by—let's explore and learn together!
+        Thanks for stopping by—let&apos;s explore and learn together!
       </p>
 
       {/* Social Media Links */}
