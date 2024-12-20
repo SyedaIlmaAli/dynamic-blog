@@ -113,7 +113,8 @@ const CommentSection = () => {
       rows={3}
       value={newComment}
       onChange={(e) => setNewComment(e.target.value)}
-    ></textarea>
+    >
+    </textarea>
     <Button
       onClick={
         editingCommentId ? handleSaveEditedComments : handleAddComment

@@ -88,7 +88,7 @@ const posts = [
     id: "11",
     title: "How to Build a Portfolio Website That Stands Out",
     description:
-      "This blog covers essential tools like React, Vue.js, and Three.js for modern web development.",
+      "Building a portfolio website that stands out requires a blend of great design, clear content, and effective storytelling. Start by defining your purpose and audience—whether you’re showcasing web development, graphic design, or photography, tailor your portfolio to highlight your expertise. Use a clean, modern layout with intuitive navigation to ensure visitors can quickly find your work. Prioritize showcasing your best projects first, and accompany each with concise descriptions that explain your role, the tools used, and the impact of the project. Adding a personal touch can make your portfolio memorable. Include a compelling 'About Me' section with a professional photo and a brief narrative about your journey and passions. Ensure your contact information is easy to find, and consider adding a contact form or links to your LinkedIn and GitHub profiles for additional credibility. Finally, optimize your website for responsiveness and speed. A portfolio that looks great on all devices and loads quickly leaves a positive impression. Use tools like Tailwind CSS or Next.js to build your site efficiently, and regularly update your portfolio to keep it relevant and aligned with your evolving skills and goals.",
 
     imageUrl: "/images/11.png",
   },
@@ -96,7 +96,7 @@ const posts = [
     id: "12",
     title: "Participating in Hackathons: What I Learned in 24 Hours",
     description:
-      "This blog covers essential tools like React, Vue.js, and Three.js for modern web development.",
+      "Participating in hackathons is an intense yet rewarding experience, especially when tackling challenges within a tight 24-hour window. One of the biggest lessons is the importance of time management. With limited time to brainstorm, design, develop, and present, prioritizing tasks is crucial. Breaking the project into manageable chunks and focusing on delivering a minimum viable product (MVP) can make the process more efficient. It's about solving a specific problem effectively, not building a perfect solution. Another key takeaway is the value of collaboration and adaptability. In fast-paced hackathons, working with teammates or adapting to unexpected obstacles fosters creativity and problem-solving skills. Even if you're working solo, the experience teaches resilience, decision-making, and the ability to work under pressure. Whether it's troubleshooting bugs or pivoting ideas mid-project, staying flexible is essential. Finally, hackathons are an excellent platform for learning. From exploring new tools and technologies to gaining real-world experience in ideation and execution, the 24-hour sprint often offers lessons that go beyond technical skills. It’s a chance to experiment, innovate, and grow, all while connecting with like-minded peers in the tech community.",
 
     imageUrl: "/images/12.png",
   },
@@ -104,7 +104,7 @@ const posts = [
     id: "13",
     title: "Three.js Basics: Create Stunning 3D Experiences on the Web",
     description:
-      "This blog covers essential tools like React, Vue.js, and Three.js for modern web development.",
+      "Three.js is a powerful JavaScript library that makes creating 3D experiences on the web accessible and engaging. It abstracts the complexities of WebGL, enabling developers to build stunning 3D scenes, animations, and visualizations with ease. At its core, a Three.js project involves creating a scene, adding a camera, and rendering it using a WebGL renderer. This foundation allows you to position objects, apply lighting, and interact with 3D environments seamlessly. Getting started with Three.js is straightforward. You can create geometric shapes like cubes, spheres, or custom models by defining meshes that combine geometry (the shape) and materials (the surface appearance). For instance, a rotating cube can be made by adding a BoxGeometry and an interactive material like MeshStandardMaterial. You can further enhance the realism of your scenes with lighting options like ambient, point, or directional lights, as well as shadows. Three.js also integrates well with advanced 3D features such as textures, animations, and physics simulations. Importing 3D models in formats like GLTF or OBJ allows you to work with assets created in tools like Blender. With Three.js, you can bring your creative ideas to life, whether it’s an interactive product showcase, an immersive game, or a data visualization, making it a go-to choice for modern web 3D experiences.",
 
     imageUrl: "/images/13.png",
   },
@@ -112,7 +112,7 @@ const posts = [
     id: "14",
     title: "A Developer's Guide to Setting Up Sentry for Error Tracking",
     description:
-      "This blog covers essential tools like React, Vue.js, and Three.js for modern web development.",
+      "Sentry is a robust tool for error tracking and monitoring, helping developers quickly identify and resolve application issues. To set it up, start by creating an account at Sentry.io and setting up a new project. You’ll receive a unique DSN (Data Source Name), which connects your application to Sentry. Install the appropriate Sentry SDK for your platform using npm, yarn, or other package managers—for example, @sentry/node for Node.js or @sentry/nextjs for Next.js. Once installed, initialize Sentry in your application’s main entry point. Include the DSN and any configurations for error tracking and performance monitoring. For instance, in Next.js, you can integrate Sentry with simple setup code in _app.js or _app.tsx. After setup, test your integration by triggering a test error and verifying it on your Sentry dashboard. Sentry also allows customization, such as adding tags or breadcrumbs to enhance error context. With features like performance monitoring and detailed error insights, Sentry e",
 
     imageUrl: "/images/14.png",
   },
@@ -120,7 +120,7 @@ const posts = [
     id: "15",
     title: "How to Optimize React Apps for Performance",
     description:
-      "This blog covers essential tools like React, Vue.js, and Three.js for modern web development.",
+      "Optimizing React apps for performance is crucial for delivering a fast and seamless user experience. One key approach is code splitting using dynamic import() to load only the necessary parts of your app. This reduces the initial load time by splitting your JavaScript bundle into smaller, manageable chunks. Tools like React's React.lazy and Suspense make implementing code splitting straightforward. Another essential practice is using memoization to prevent unnecessary re-renders. React’s React.memo can optimize functional components by re-rendering them only when their props change. Similarly, the useMemo and useCallback hooks help optimize expensive calculations and callback functions by caching their results unless dependencies change. Lastly, ensure you optimize state management. Overusing the global state or placing too much data in the React context can lead to performance bottlenecks. Use local component states whenever possible and consider libraries like Redux Toolkit or Zustand for efficient global state handling. These practices, combined with techniques like lazy loading images and avoiding inline functions in render, can significantly enhance your app's performance.",
 
     imageUrl: "/images/15.png",
   },
@@ -165,7 +165,7 @@ const Post = ({ params }: { params: { id: string } }) => {
       <div className="mt-6 text-lg text-slate-700">
         {renderParagraphs(post.description)}
       </div>
-      <CommentSection postId={post.id}></CommentSection>
+      <CommentSection></CommentSection>
       <AuthorCard />
     </div>
   );
